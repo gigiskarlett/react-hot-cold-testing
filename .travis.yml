@@ -5,4 +5,10 @@ cache:
   - node_modules
 env:
 - CI=true
-
+deploy:
+  provider: heroku
+  api_key:
+    secure: utzzqydaK91BLWVsqCQFM9jfUQ7JUtuE+V20opj1amaDE9IzuuN06m+jEq3rtW1gXwCJpClKku+ui5QaxAeQeKYs+u25R8t40JNayGV5ZT1dUKCTNw6by38Eg8dEbphJ8es6SQiecvhP4y3O5Ju1CuPDQnPUxCbguuF1HXY/CnlUEapRVn4y8cgPqXHWvec9lAOVjCYYTro5eWox7ypTK19eL/kx3b83XkWYOuwqL1/QPNebhaiWne5zhQfE1wbe+MPG5HeqxF7Fo7MUvDmwpII6rACOYchWhrosCP5CnGjHEAzxJygxlc8EZzJZTOH1OcC4r9i1Udw8+VrBk5ufVMy7MdpRDKbsH5KpTzQdKbxTeBSeG2DjqLGMGg9lUQQJ+f8Xf7JNSIVUzlCXi4dZkUQufVZa1W+UPIumSR/dhgHKmwZdLIakjWgEZaIZNRy+y36TsFo+85ka33xzqGI5JEJXUhpsd0oBrD2G1E6iSrREzCutMxk0/XJ594DbkrYMhvqrWJcH+E9yEzO+C+Acizf9ogPNmxRS0g7r1rTH4PKWXdonyenRwZJh5sDasuHZQ6UzaddkdAhhxkICCVLy2wW0OyI2m6+OuJXIcc+epZkhQMtlZhBpzGoHoNGkuTTk8b54k8FWh+zLeyVKRB2ceuzOgTkhCIyJNbX8G+mTJrY=
+  app: floating-mountain-66060
+  on:
+    repo: gigiskarlett/react-hot-cold-testing
