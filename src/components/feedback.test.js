@@ -11,6 +11,6 @@ describe("<Feedback />", () => {
     it("gives feedback to player", () => {
         const feedback = "you're hot"
         const wrapper= shallow(<Feedback feedback={feedback} />);
-        expect(wrapper.contains(feedback).toEqual(true);
+        expect(wrapper.contains(feedback)).toEqual(true);
     })
 })
