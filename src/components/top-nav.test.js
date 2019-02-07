@@ -17,4 +17,14 @@ describe("<TopNav />", () => {
     });
     expect(callback).toHaveBeenCalled();
   });
+
+  it("should update aural-status", () => {
+    const callback = jest.fn();
+    const wrapper = shallow(<TopNav onGenerateAuralUpdate={callback} />);
+    const link = wrapper.find(".visuallyhidden");
+    link.simulate("click", {
+      preventDefaultI() {}
+    });
+    expect(callback).toHaveBeenCalled();
+  });
 });
