@@ -3,3 +3,8 @@ import {shallow} from 'enzyme';
 
 import Feedback from './feedback';
 
+describe("<Feedback />", () => {
+    it("renders without crashing", () => {
+        shallow(<Feedback />)
+    })
+})
