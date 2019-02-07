@@ -3,3 +3,8 @@ import { shallow } from 'enzyme';
 
 import TopNav from './top-nav';
 
+describe("<TopNav />", () => {
+    it("renders without crashing", () => {
+        shallow(<TopNav />)
+    })
+})
