@@ -5,6 +5,6 @@ import StatusSection from "./status-section";
 
 describe("<StatusSection />", () => {
   it("renders without crashing", () => {
-    shallow(<StatusSection guessCount={} />);
+    shallow(<StatusSection guesses={[]} auralStatus="" />);
   });
 });
