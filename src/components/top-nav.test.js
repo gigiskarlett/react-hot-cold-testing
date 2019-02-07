@@ -23,7 +23,7 @@ describe("<TopNav />", () => {
     const wrapper = shallow(<TopNav onGenerateAuralUpdate={callback} />);
     const link = wrapper.find(".visuallyhidden");
     link.simulate("click", {
-      preventDefaultI() {}
+      preventDefault() {}
     });
     expect(callback).toHaveBeenCalled();
   });
